@@ -1,0 +1,28 @@
+<view class="addadress">
+<view class="header">
+<text>编辑收货地址</text>
+<button size="mini" bindtap="delecteadress" data-_id="{{adress._id}}">删除</button>
+</view>
+  <form class="information-group" bindsubmit="alertevent">
+    <view class="adress">
+      <text>门牌号</text>
+      <view class="descrate">
+        <input name="detail" value="{{adress.detail}}" placeholder="请输入详细地址"></input>
+      </view>
+    </view>
+    <view class="adress">
+      <text>姓名：</text>
+      <view class="descrate">
+        <input name="name" value="{{adress.name}}" placeholder="请输入姓名"></input>
+      </view>
+    </view>
+    <view class="adress">
+      <text>联系号码：</text>
+      <view class="descrate">
+        <input name="phone" value="{{adress.phone}}" placeholder="请输入手机号" type="number">
+        </input>
+      </view>
+    </view>
+    <button form-type="submit" >修改</button>
+  </form>
+</view>

@@ -1,0 +1,47 @@
+.indexpage{
+   
+}
+.navbar{
+    height: 120rpx;
+    width: 100%;
+    background-color: red;
+    box-sizing: border-box;
+    border-bottom: 2rpx solid #b2b2b4;
+}
+.content{
+    width: 100%;
+   
+}
+.content .bgcimg {
+    position: fixed;
+    top:120rpx;
+    height: 944rpx;
+    opacity: 0.8;
+    z-index: -1;
+}
+.content .titelan{
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+    color: black;
+    margin: 352rpx auto;
+    height: 300rpx;
+    width: 100%;
+    box-sizing: border-box;
+}
+.content h1{
+    height: 60rpx;
+    line-height: 60rpx;
+    text-align: center;
+    font-size: 60rpx;
+}
+.content p{
+    height: 36rpx;
+    line-height: 36rpx;
+    text-align: center;
+    font-size: 36rpx;
+}
+.content van-button{
+    text-align: center;
+    
+}

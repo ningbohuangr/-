@@ -1,0 +1,44 @@
+.navigation{
+  background: yellow;
+  height: 280rpx;
+  width: 100%;
+}
+.myorder{
+  height: 200rpx;
+  width: 100%;
+  border-bottom: solid 1px #e4e4e4;
+  font-size: 40rpx;
+  display: flex;
+  align-items: center;
+}
+.adress{
+  height: 200rpx;
+  width: 100%;
+  border-bottom: solid 2rpx #e4e4e4;
+  font-size: 40rpx;
+  display: flex;
+  align-items: center;
+}
+.Service{
+  height: 200rpx;
+  width: 100%;
+  border-bottom: solid 2rpx #e4e4e4;
+  font-size: 40rpx;
+  display: flex;
+  align-items: center;
+}
+.FAQ{
+  height: 200rpx;
+  width: 100%;
+  border-bottom: solid 2rpx #e4e4e4;
+  font-size: 40rpx;
+  display: flex;
+  align-items: center;
+}
+image{
+  height: 40rpx;
+  width: 50rpx;
+  margin-right: 40rpx;
+  display: flex;
+  align-items: center;
+}

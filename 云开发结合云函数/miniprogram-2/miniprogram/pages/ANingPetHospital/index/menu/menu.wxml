@@ -1,0 +1,20 @@
+<view class="menu">
+<!-- 头部 -->
+<view class="navbar">
+
+</view>
+<!-- 分类 -->
+<van-grid column-num="4"  gutter="{{ 10 }}">
+  <van-grid-item icon="{{item.img}}" text="{{item.label}}" wx:for="{{menulist}}" url="../../login/Login"/>
+</van-grid>
+<!-- 轮播图 -->
+<view class="infolist">
+<swiper autoplay="ture" interval="1500">
+<swiper-item  wx:for="{{photolist}}" wx:key="{{index}}">
+    <image src="{{item.url}}"/>
+</swiper-item>
+</swiper>
+</view>
+<!-- 更多内容 -->
+
+</view>

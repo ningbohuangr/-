@@ -1,0 +1,16 @@
+<view class="adresslist">
+  <view class="header-group">
+    <text>我的地址</text>
+    <navigator url="/my/addadress/addadress">新增地址</navigator>
+  </view>
+  <view class="content" wx:for="{{adress}}" wx:key="index">
+    <view class="infromation-group">
+      <text class="ifadress">{{item.detail}}</text>
+      <view class="ifcustom">
+        <text class="name" >{{item.name}}</text>
+        <text class="telnum" >{{item.phone}}</text>
+      </view>
+    </view>
+    <image src="{{png5}}" bindtap="gotoalter"data-detail='{{item.detail}}'  data-name='{{item.name}}'   data-phone='{{item.phone}}' data-_id="{{item._id}}"></image>
+  </view>
+</view>

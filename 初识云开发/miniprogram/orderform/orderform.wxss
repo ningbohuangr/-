@@ -1,0 +1,110 @@
+.navigation{
+  height:80rpx;
+  width: 100%;
+  display: flex;
+  background-color: #fff;
+  flex-wrap: nowrap;
+}
+.nav-text{
+  padding: 15rpx 0;
+  flex: 1;
+  display: flex;
+  justify-content: space-around;
+  border-right: solid 2rpx #f5f5f5;
+}
+.allorder.on{
+  color: #848787;
+}
+.estimate.on{
+  color: #848787;
+}
+.reimburse.on{
+  color: #848787;
+}
+.nav-icon{
+  padding: 15rpx 20rpx;
+  float: right;
+  flex-basis: 120rpx;
+  display: flex;
+  justify-content: space-between;
+}
+.nav-icon image{
+  height: 50rpx;
+  width: 50rpx;
+}
+.order-list{
+  height: 300rpx;
+  width: 100%;
+  background: #fff;
+  border-bottom: solid 6rpx #848787;
+}
+.store-nav{
+ height: 100rpx;
+ width: 100%;
+ display: flex;
+ background-color: #ab956d;
+}
+.storeimg{
+  height: 100rpx;
+  flex-basis: 100rpx;
+  padding: 10rpx 10rpx;
+}
+.storeimg image{
+  height: 80rpx;
+  width: 80rpx;
+}
+.store-inf{
+  flex: 1;
+  display: flex;
+}
+.storename {
+  padding: 20rpx;
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+}
+.storename image{
+  height: 50rpx;
+  width: 50rpx;
+}
+.staues{
+  flex-basis: 140rpx;
+  padding: 20rpx 20rpx;
+  color: #fff;
+}
+.foodslist{
+  display: flex;
+  height: 140rpx;
+  width: 100%;
+}
+.foods-group{
+  flex: 1;
+  white-space: nowrap;
+  height: 140rpx;
+  width: 70%;
+}
+.foods-box{
+  height: 140rpx;
+  width: 160rpx;
+  padding: 10rpx 10rpx 0 10rpx;
+  display: inline-block;
+  font-size: 24rpx;
+  text-align: center;
+  box-sizing: border-box;
+}
+.foods-box image{
+  height:100rpx;
+  width: 140rpx; 
+}
+.foods-box text{
+  position: relative;
+  bottom: -24rpx;
+  left: -140rpx;
+}
+.foods-detail{
+  padding: 10rpx;
+  flex-basis: 140rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}

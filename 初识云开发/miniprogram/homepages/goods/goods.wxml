@@ -1,0 +1,61 @@
+<view class="foods">
+  <view class="left">
+    <block class="left-group" wx:for="{{category}}" wx:key="index">
+      <view class="titel {{curIndex ==item.index?'on':''}}" wx:for="{{item.category}}" bindtap="switchTab" data-index='{{item.index}}' wx:key="index" data-id="{{item.id}}">{{item.name}}</view>
+    </block>
+  </view>
+
+  <!--右边详情物品  -->
+  <scroll-view class="right" scroll-y="true" scroll-into-view="{{toView}}" scroll-with-animation="true">
+    <text>阿罗
+      </text>
+    <text>阿罗
+      </text>
+    <text>阿罗
+      </text>
+    <block wx:for="{{foods}}" wx:key="index">
+      <view class="foods-list" id="{{item.categoryid}}">
+        <view class="image-box">
+          <image src="{{item.url}}"></image>
+        </view>
+        <view class="information">
+          <view class="foodsname">{{item.foodsname}}</view>
+          <view class="monthsales">月销：300</view>
+          <view class="detail">1人份</view>
+          <view class="price">
+            <text>￥{{item.price}}</text>
+            <view>
+              <image bindtap="intocut" src="cloud://bohuang-r9cm1.626f-bohuang-r9cm1-1301343916/减.png" data-index="{{index}}" data-price="{{item.price}}"></image>
+              <text>{{item.count}}</text>
+              <image bindtap="intoadd" src="cloud://bohuang-r9cm1.626f-bohuang-r9cm1-1301343916/加.png" data-price="{{item.price}}"  data-index="{{index}}" data-value="{{item}}"></image>
+            </view>
+          </view>
+        </view>
+      </view>
+    </block>
+    <view>~~~~~~~~~到底了！~~~~~~~~~</view>
+  </scroll-view>
+  <!--右边详情物品  -->
+  <!---底部详情------->
+
+</view>
+
+<view class="paybottom">
+  <view class="icon-group">
+    <view class="frist-icon">
+      <image src="cloud://bohuang-r9cm1.626f-bohuang-r9cm1-1301343916/联系商家.png"></image>
+      <text>联系商家</text>
+    </view>
+    <view class="mid-icon">
+      <image src="cloud://bohuang-r9cm1.626f-bohuang-r9cm1-1301343916/外卖.png"></image>
+    </view>
+  </view>
+  <view class="pricetext">
+    <view class="redprice">
+      <text>￥{{total}}</text>
+    </view>
+    <view class="sale" bindtap="intoorder">
+      <text>去结算</text>
+    </view>
+  </view>
+</view>

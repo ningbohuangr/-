@@ -1,0 +1,55 @@
+<view class="homepage">
+  <view class="navigation">
+    <!--------------导航框副图标------->
+    <view class="navigation-bar-icon">
+      <image src="{{png1}}"></image>
+      <image src="{{png2}}"></image>
+    </view>
+    <!---------搜索框---------------->
+    <view class="search-box">
+      <navigator url="/homepages/search-page/search-page">
+      </navigator>
+    </view>
+  </view>
+  <!-------轮播 -------->
+  <swiper indicator-dots="true" autoplay="true" interval="3000" duration="800" circular="true">
+    <block wx:for="{{imgUrls}}" wx:key="index">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image" width="100%" />
+      </swiper-item>
+    </block>
+  </swiper>
+  <!-----分类菜单------>
+  <view class="bigmenu">
+    <navigator class="bigmenu_item" url="/homepages/search-page/search-page" wx:for="{{bigmenu}}" wx:key="bigmenu_id">
+      <view>
+        <image src="{{item.icon}}" class="bigmenu_icon"></image>
+      </view>
+      {{item.title}}
+    </navigator>
+  </view>
+  <!------商铺菜单---------->
+  <view class="dividingline">
+    <view class="line-group">
+      <image src="cloud://bohuang-r9cm1.626f-bohuang-r9cm1-1301343916/image/商铺.png"></image>
+      <text>猜你喜欢</text>
+    </view>
+  </view>
+  <view class="shopstore" wx:for="{{store}}" wx:key="index" bindtap="intogoods" data-store_name="{{item.store_name}}" data-express_fee="{{item.express_fee}}" data-min_amount="{{item.min_amount}}"
+  data-logo_url="{{item.logo_url}}">
+    <view class="image-box">
+      <view wx:if="{{item.is_rest}}">
+        <image src="{{item.logo_url}}"></image>
+      </view>
+      <view wx:else>
+        <image src="{{item.sleepimage}}"></image>
+      </view>
+    </view>
+    <view class="information-box">
+      <view class="store_name">{{item.store_name}}</view>
+      <view class="monthsales">月销：{{item.monthsales}}</view>
+      <view class="detail">起送￥{{item.min_amount}} || 配送￥{{item.express_fee}}</view>
+      <view class="time">营业时间{{item.business_start}}-{{item.business_end}}</view>
+    </view>
+  </view>
+</view>

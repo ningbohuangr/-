@@ -1,0 +1,93 @@
+.serachpages {
+    margin: 0;
+    padding: 0;
+
+}
+
+.serachpages .navbar {
+    height: 124rpx;
+    width: 100%;
+    background-color: black;
+}
+
+.serachpages .displayimg {
+    box-sizing: border-box;
+    height: 464rpx;
+    width: 100%;
+    margin-bottom: 10rpx;
+    padding: 110rpx;
+    border: 4rpx solid gray;
+    background-image: url("http://bpic.588ku.com/element_origin_min_pic/16/08/07/1457a6d738b08cb.jpg");
+}
+
+.serachpages .displayimg .Font-Group {
+    box-sizing: border-box;
+    text-align: center;
+    height: 236rpx;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-weight: 500;
+}
+
+.van-tabs .van-tabs__nav {
+    margin: 0 auto;
+    width: 90%;
+    border-radius: 46rpx;
+    background-color: #1cb19e;
+    margin-bottom: 10rpx;
+}
+
+.shoplist {
+    box-sizing: border-box;
+    margin: 16rpx;
+    background-color: #f6f6f6;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border: solid 26rpx gray;
+    border-radius: 10rpx;
+    text-align: center;
+}
+
+.shoplist navigator image {
+    height: 240rpx;
+    width: 100%;
+}
+
+.shoplist .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 284rpx;
+    box-sizing: border-box;
+}
+
+.shoplist .content .content-nav {
+    font-size: large;
+    height: 104rpx;
+    text-align: left;
+    padding-left: 40rpx;
+    line-height: 104rpx;
+}
+
+.shoplist .content .content-mid .info {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    text-align: left;
+    padding: 20rpx;
+}
+
+.shoplist .foot {
+    flex: 1;
+    height: 166rpx;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.shoplist .foot button {
+    font-size: 28rpx;
+    height: 70rpx;
+    width: 300rpx;
+}

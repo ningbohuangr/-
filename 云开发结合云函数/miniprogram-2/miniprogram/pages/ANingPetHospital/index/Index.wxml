@@ -1,0 +1,14 @@
+<view class="indexpage">
+    <view class="navbar">
+
+    </view>
+    <view class="content">
+    <image class="bgcimg" src="cloud://animal-4gkv8qdn7b4aac40.616e-animal-4gkv8qdn7b4aac40-1301343916/图片数据/indexbgc.jpg" />
+    <view class="titelan">
+        <h1>因为热爱，所以专注</h1>
+        <p>以小动物的生命</p>
+        <p>为第一要以</p>
+        <van-button round type="info" bindtap="gomenu">立即咨询</van-button>
+    </view>
+    </view>
+</view>

@@ -1,0 +1,24 @@
+<view class="addadress">
+  <form class="information-group" bindsubmit="addevent">
+    <view class="adress">
+      <text>门牌号</text>
+      <view class="descrate">
+        <input name="detail" value="{{adress.detail}}" placeholder="请输入详细地址"></input>
+      </view>
+    </view>
+    <view class="adress">
+      <text>姓名：</text>
+      <view class="descrate">
+        <input name="name" value="{{adress.name}}" placeholder="请输入姓名" ></input>
+      </view>
+    </view>
+    <view class="adress">
+      <text>联系号码：</text>
+      <view class="descrate">
+        <input name="phone" value="{{adress.phone}}" placeholder="请输入手机号" type="number">
+        </input>
+      </view>
+    </view>
+    <button form-type="submit">保存</button>
+  </form>
+</view>

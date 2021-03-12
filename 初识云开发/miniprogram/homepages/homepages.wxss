@@ -1,0 +1,110 @@
+.navigation{
+  padding: 20rpx;
+  background-color: red;
+}
+.navigation-bar-icon{
+  
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+.navigation-bar-icon image{
+  height: 50rpx;
+  width: 50rpx;
+}
+.search-box{
+  box-sizing: border-box;
+  padding: 10rpx;
+  margin-top: 20rpx;
+  height: 60rpx;
+  width: 100%;
+  background-color: #fff;
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAYAAADDPmHLAAAMl0lEQVR4Xu2dgZHVNhPHpQoSKoBUEFIBpALkCgIVQCoAKgipIEcFNhWEqwBSAVwFQAWb+V/WjPPO0q5kSZbfk2eYyfednyxpf1rtrlaSNf256B6wF9363njTAbhwCDoAHYBj9YBz7oG19j4RPTTG/GiMeTy3wFr7/b/n/4+IPhtj8A/PV2PMR2vtR/z3OI7Xx2p9/to2rwGccxD0Ixb0Q2vtg5zdQESA4b219j0RXU/TBEgu5mkSABb6b8YYl1vgkmQZiCtjzNtLgKEZAKDajTHP9xC6Dwoimqy10ziObyVwjvr33QFgwb+01j5ttRPZjnhzjlphNwCcczDYIPg7hlvDIMA+AAh/nsv0UB0A5xws9z9aHvESgET01Vr74hymhqoAOOdeGmNeWGsBweEfNhh/n6bp/VEbUwUAtur/stbCpcv13MC/ZyFANYeEAAPz9h97FajHD7kqQkRvpmn6PVd5NcspDoBzDpb9qwyj/nr22SHsrXMwG5+wPx6zHXJ/S8dz3Z5N04S4wmGeYgDwXI9R7zb0xj9EBJ/8aqvApTqwlnrK9U2CAbaBMQZTAup8iKcIABtV/jcWOtTqHMKt2pnOOQSgXnAEMvrbqP80Tc+if7jDD7IDwML/O0HlQ/BwsSD4JsKx3BYYrYhKRj1HgSArAOzbj7HCJ6LXLQn+VNIAwVoLOLEmoX7YLvi1FaDXKp4NAOcc5s+/1L3z34sw7J7upeoj62q4ja+MMWoboXUIsgCAkW+t/TuiQ6HuX+QyloZheEREsOgRX5hdTYza/8Ub2EibrXS4jVj9i/Lh2bh9EzMttAzBZgAS5nxY9m7LqF+sFkLIMaHkGyzwcMxgkyvJ2gDTgiqeQET43q8Rg6TKq5sAiBU+EWGJNWnRZ8Nq4Sx0WOZZfXS2DeDy/ayRVouGYTIArAo/aNfriQj+MUZM1MOG5fOEeMI77nCM+GIP+gHJJBEQvJ6mCXZEE88WAGDtq4I8RIQIWVRwJHG1cJcYAkOA9j3RSJWI4BlE2R6aclPeSQLAOQff+A/NB2OFn7ha2EQMwTl3pTEO2Rj9qQX3MBqAmHk/QfiwD7BUrF4thF2BFcYWOhMDYhgG2BmiTdCKUZgCAOZ9cVUvZs5PHPXwJiD4JlTprA1jbAIEwPa2B6IAcM5hVQ9r+sEnxtpPWDeAun+VYlBK9c71d4YAmiAYMGphKlADwKP0k0I9/zOOo6gh0Nkx0wkL5zCRQ3YRP0hQxQwWqayUv8cAoDFwMDofa/xtrLgZY7BcrJrvW1CXsR0coTF38wpUAGhDvVqjT1sedzigQuSwqbleC8MwDKh3cBEJoeJpmn7RlpnzPS0AWN6VQq7X4zhK78Sq/c1h45ydlVIWb2WDPRAMGe8VGxAB4AZ8khpPRPBrgwkcHM6FFyGq/dbcO6n9ob9rpoK93EINAOLcr5mf2YiEJhENxL0Noy3CXvtthFdQ3RYIAqAc/ZijH0iBGOccDD5xIejchL+ID2jyJd6N46gKr+eCVAIA697I6vU+ytGPHLtRqrTWiJTKafXvwzBgipRiA+JUmrN9EgDw+0PbscXRr40fnOvIXwpLkzUVE0HNAYIXAE0gg4iwRw7Zs95Hs0ByCcKfO2gYBiS8ej2C2i5hCACN+g+qK42/f0nCBwTOuc39mmPkz2WEAJDUvxjydc5J8QP4+YgcNpEGnrNjfWVpDOua08AqAEr1H8zwUYx+2A8PpdhBDaHU/oZiyVgVVMtRbx8AYsIHEd0LjVxp9O8V+crRaVvL0CTUjOMoxmi21gO/X/3IMAzIowulNwXVv6TmNK5jjsa1WoZSw1YJCvk0wJdQuFay/oXQp2g7tCq4nPVSeANVkkXuACCNXnQCEQ3TNHmzbZ1zPgPyYuf9U3gUWraKHbAGgLjLJzT/h9RbTes252gtUZZkB+Bgqmmafirx7WWZawBIBuDNOI7e6GBA/XfVv+h5hZdkahiCawBIeX9B1eRLgLhkq39tFCun2l802VVbtMQdAKQMFskAHIaBTit0adE+rUDW+mr52xqDJgUAr3XqU2uaZBFtp53Te1JAqIa7nAKA1wNYm/9rNOKoUCi0bXFXcA2AOypcq5ZWFjrE5eKjCi9Hvc8OgNMGSfZCjk48chmXAEDV7JajwSAli9aYPrNOASdWbfX8tgMCEEy4PTQAUrj4aMIqUd9WpwApZcm7SrXQAMFoYYnOPGKZrQIQ3MoUiufPAHTjT4fjUQHw+qYLAIqHMHVd3PZbgVXT24rXmEbXjEApGcRr3DEAXf0ruWsyFCy5Jjhc0bcJFCqN05qDqeLK/jnr15RZQcXd6LXVQHELk2+ZEkkONY5mOwcy+ETy4G6pvZaDNQkhq2RCe7R86HNL4Cj2B1TJn1jTADj48Euos3x7+LAaeNSDHGrDofAAkk9VjWmLLys4eNRZX9+P6eL1dxUGYNLJqrE182UFB7cv1cpXi23MUd7XzP9EVMWV9gEgbueuVcGjCDWmnooNs9/GcRRPUYn5pu9dHwAaO0DcGZyjgudYhnMuuO/CGFNtIc27/UiRrvR1mqZ75yigkm1Sqv/ow7VT6xzaHSylh1cJVaY2rNXfKdQ/+jW47zJn20IAaKaBJm/ByNlBOcvSpILXVP9oW3AHqmL7EmitYq3mFMReZSlHfzX1LwKgPNOmSsBiL6Hl+q7yrKRq1v/cLnEPuvJkq64FBFIUoV9o0+Jp4KfVFAFQrA6i4t0WCACgnPvRj8VX/1IAgDGI8+2ks26rzl25VHONcqTTUlCHvcLrogZA5ZRaAJBgKriYA5808Gj8fgag+ugXjcC5gXzWrUYL4NyIQdMxl/CO9nDsvUa/GgDWAmJgiEnuUwHTrVH9xphdt8+ppoB5tErhYQYAUwBSx7Pe0nk0jaGZNrm/qiz7+vovCgDNqRbcKAi/6WvTSwKliZ/w96tk/YTaGgUATwXiUaeXDIEm2XMWSAtR1BQA1HflXlp8IOEWtFsW+Hp5TJ3YlPOu5vQZDQBrAVzbjsqKV6e3eGN2CfWfKvy1ujAQsA2KX5SVBABDIKaPL1TdWdsEOYW/BAIaFLfRloytJAPAEIj3CZ07BBEGX5LiYW0A17qIV7UJgAQIEExCY4qrtqTejvyRc+6ltRZ7IYo+fMVsEdc6BwBqo3ChDXD37+uivVawcF7aHRV3KWarRSkINgPAWiAFAmgBaIPgXYPZejBTQbFX3mb67OwtZA+yZQEgFQJ2gaBCkWHc9CISx/Vx9Z14O2pOoZ+WlVsTZANgIwSfMZeO4/i2ZOellM3q/nmNuV5bv5wQZAVgboAm983j/zYDAo/4l1gN11x1qxVervdyQVAEANYGqpCxBwRMB1c8NVS1EYZheILbyjW3nOYSZmo5OSAoBgBDgI6EIMWIoa8T2A9GGdelfOFZ6K2O9hAgWyEoCsDCLsCxM49SSV+4j3O8/L219iMR3cR6EbxYcx83lhljcBbCrkbd1j5hQzrZOygOwMIuwD0EODomWRsEtMRpYAn/G5srlzeVPxCuwU2VBe4+RFj8Q2oBOX6XqgmqAcDaAEJ4I9xIlqM/apSBTB4EtNAeI+33r1GhFAiqArDQBlC96Lifa3RM7m/gHERjDIT/PXYhnfiRuw4BbRg1HewCwAIEGImYFjbbBzU6GMmbLPg7nkkrAMTaBLsCcKIREBFsEQSoemirq5DBKd0CVgPQ5Te000ETACxAwG1ksw++9/TwjoiQ5g4XVHy0u3/EgjK+oIGgKQCWbeckC8AAN62GZviGlCwI3RgDwUevTbQ0DSxc52AyTrMAnA4EZCQv/HZoivsbBwvcN3QO/mFv4+aEC23W9MZ6R/+cNdnqhp3DALDWatYS8Pc1wRwIGKMaN3IWCy9rzlSIlmCGH/iuoDs0ABn6JXsRvI0Ogai9bZj/tc2Xod0ByI7A7WZaddZ0gc97i1zbft4BKCSBFiFYu+yjA1AIABTbIAR3jvrvABQEoEEIOgCF5b1afEua4PQOgq4BKhHRCgQdgEoC98UttHsqC1Xzzn1OXQMU6mlfsTtrgm4DVJZ3UzbB2n2OXQPsRMQemmDtQIoOwE4A7OAirt7n2AHYEYCaEPgu+uoA7AxAJQi8t7l2ABoAoDAESGnDdX6r+Q4dgEYAKAWBdAF1B6AhABYQIA9xaz4BRv5T5LaFmtgBaAwAhgAHbgCCJ4nVu92tpElz6wAk9nCNn3GOYUy6/A3vVlJlMqMNHYAaktz4DT6rABnSjvc8ztPDDXIcObkV2j768K0OwEbhHP3nHYCjS3Bj/TsAGzvw6D/vABxdghvr/y83iSj5fGXEywAAAABJRU5ErkJggg==");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 5%;
+}
+.search-box navigator{
+  height: 40rpx;
+}
+swiper {
+    height: 361.5rpx;
+}
+swiper-item image {
+    width: 100%;
+    height: 100%;
+}
+.bigmenu {
+  padding: 0 20rpx 20rpx;
+  font-size: 28rpx;
+  text-align: center;
+  background-color: #fff;
+  overflow: hidden;
+}
+.bigmenu_item {
+  float: left;
+  margin-top: 20rpx;
+  width: 25%;
+}
+
+.bigmenu_icon {
+  height: 72rpx;
+  width: 72rpx;
+}
+.dividingline{
+  height: 70rpx;
+  border: solid 2rpx #e4e4e4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.line-group{
+  padding: 10rpx;
+  width: 25%;
+  display: flex;
+  justify-content: space-between
+}
+.line-group image{
+  height: 50rpx;
+  width: 50rpx;
+}
+.shopstore{
+  display: flex;
+  padding: 20rpx;
+  justify-content: space-between;
+   border-bottom: 2rpx solid #e4e4e4;
+}
+.image-box{
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+.image-box image{
+  width: 195rpx;
+  height: 145rpx;
+  margin-right: 40rpx;
+}
+.information-box{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+ 
+}
+.store_name{
+ float: left;
+ font-size: 32rpx;
+}
+.monthsales{
+  display: flex;
+  justify-content: flex-end;
+  font-size: 22rpx;
+  color: #999;
+}
+.detail{
+  font-size: 28rpx;
+  font-weight: 200;
+  color: #666;
+  border-bottom: 2rpx dashed #999
+}

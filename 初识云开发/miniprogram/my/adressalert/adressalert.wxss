@@ -1,0 +1,39 @@
+.information-group{
+
+}
+.adress{
+  height: 3em;
+  background-color: #e4e4e4;
+  padding: 20rpx 20rpx;
+  box-sizing: border-box;
+  border-top: solid 2rpx black;
+  border-bottom: solid 2rpx black;
+}
+.adress input{
+  min-height: 50rpx;
+  height: 50rpx;
+}
+.descrate{
+  background-color: #fff;
+  width: 75%;
+  height: 60rpx;
+  float: right;
+  padding: 5rpx 5rpx;
+}
+.information-group button{
+  background-color: gray;
+  margin-top: 40rpx;
+}
+.header button{
+  font-size:20rpx;
+  height: 50rpx;
+  width: 100rpx;
+  background-color: gray;
+  float: right;
+}
+.header{
+  height: 60rpx;
+  width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+}

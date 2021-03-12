@@ -1,0 +1,38 @@
+.hospitalservice{
+  margin: 0;
+  padding: 0;
+  
+}
+.hospitalservice .navbar{
+  height: 124rpx;
+  width: 100%;
+  background-color: black;
+}
+.hospitalservice .displayimg{
+  box-sizing: border-box;
+  height:464rpx;
+  width: 100%;
+  margin-bottom: 10rpx;
+  padding: 110rpx;
+  border:4rpx solid gray;
+  background-image: url("http://bpic.588ku.com/element_origin_min_pic/16/08/07/1457a6d738b08cb.jpg");
+}
+.hospitalservice .displayimg .Font-Group{
+  box-sizing: border-box;
+  text-align: center;
+  height: 236rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  font-weight: 500;
+}
+
+.van-tabs .van-tabs__nav{
+  margin: 0 auto;
+  width: 90%;
+  border-radius: 46rpx;
+  background-color: #1cb19e;
+  margin-bottom: 10rpx;
+}
+
+

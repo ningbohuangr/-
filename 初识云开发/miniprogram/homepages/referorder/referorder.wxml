@@ -1,0 +1,119 @@
+<scroll-view scroll-y="true">
+  <view class="referorder">
+    <view class="user-box">
+      <view class="navigation">
+        <view class="storebring {{curIndex === 0?'':'on'}}" bindtap="intostorebring">
+          <text>商家配送</text>
+        </view>
+        <view class="storeself {{curIndex === 1?'':'on'}}" bindtap="intostoreself">
+          <text>到店自取</text>
+        </view>
+      </view>
+      <view class="left" wx:if="{{curIndex==0}}">
+        <view class="adress">
+        <navigator url="remarke/getadress/getadress">
+          <view class="content">
+            <view class="infromation-group">
+              <text class="ifadress">{{adress[0].detail}}</text>
+              <view class="ifcustom">
+                <text class="name">{{adress[0].name}}</text>
+                <text class="telnum">{{adress[0].phone}}</text>
+              </view>
+            </view>
+          </view>
+          </navigator>
+        </view>
+        <view class="gettime">
+          <view class="content">
+            <view class="infromation-group">
+              <view class="titel-group">
+                <text class="titel">立即送出</text>
+                <text class="titel-time">大约20：13 ></text>
+              </view>
+              <text class="titel-bot">特殊时期减少接触，请修改下方订单备注</text>
+            </view>
+          </view>
+        </view>
+      </view>
+      <view class="right" wx:else>
+        <text>别来了，配送费退回</text>
+      </view>
+    </view>
+    <view class="foodslist">
+      <view class="storename">
+        <text>肯德基</text>
+        <image src="cloud://bohuang-r9cm1.626f-bohuang-r9cm1-1301343916/美团.png"></image>
+      </view>
+    </view>
+    <view class="foods-box">
+      <block wx:for="{{savefoods}}" wx:key="index">
+        <view class="foods-lit-box">
+          <view class="image-box">
+            <image src="{{item.url}}"></image>
+          </view>
+          <view class="foodsdetail">
+            <view class="foods-pan">
+              <text>{{item.foodsname}}</text>
+              <text>￥{{item.price}}</text>
+            </view>
+            <view class="amount">x{{item.count}}</view>
+          </view>
+        </view>
+      </block>
+    </view>
+    <view class="remarke">
+      <navigator url="remarke/remarke">
+        <view class="releft">
+          <text> 备注</text>
+        </view>
+        <view class="reright">
+          <text>点击填写备注 ></text>
+        </view>
+      </navigator>
+    </view>
+    <view class="tableware">
+      <view class="tableft">
+        <text> 配送费</text>
+      </view>
+      <view class="tabright">
+        <text>￥{{express_fee}}</text>
+      </view>
+    </view>
+    <view class="payment">
+      <view class="payleft">
+        <text>支付方式</text>
+      </view>
+      <view class="payright">
+        <text>在线支付</text>
+      </view>
+    </view>
+    <view></view>
+  </view>
+  <view>阿罗</view>
+  <view>阿罗</view>
+  <view>阿罗</view>
+  <view>阿罗</view>
+  <view>阿罗</view>
+  <view>阿罗</view>
+  <view>阿罗</view>
+  <view>阿罗</view>
+</scroll-view>
+<view class="paybottom">
+  <view class="icon-group">
+    <view class="frist-icon">
+      <image src="cloud://bohuang-r9cm1.626f-bohuang-r9cm1-1301343916/联系商家.png"></image>
+      <text>联系商家</text>
+    </view>
+    <view class="mid-icon">
+      <image src="cloud://bohuang-r9cm1.626f-bohuang-r9cm1-1301343916/外卖.png"></image>
+    </view>
+  </view>
+  <view class="pricetext">
+    <view class="redprice">
+      <text>￥{{total}}</text>
+    </view>
+    <view class="sale" bindtap="intoorder">
+      <text>提交订单</text>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,63 @@
+<view class="orderform">
+  <view class="navigation">
+    <view class="nav-text">
+      <view class="allorder {{curIndex === 0?'':'on'}}" bindtap="intoallorder">
+        <text>全部订单</text>
+      </view>
+      <view class="estimate {{curIndex === 1?'':'on'}}" bindtap="intoestimate">
+        <text>待评价</text>
+      </view>
+      <view class="reimburse {{curIndex === 2?'':'on'}}" bindtap="intoreimburse">
+        <text>退款</text>
+      </view>
+    </view>
+    <view class="nav-icon">
+      <image src="cloud://bohuang-r9cm1.626f-bohuang-r9cm1-1301343916/搜.png"></image>
+      <image src="cloud://bohuang-r9cm1.626f-bohuang-r9cm1-1301343916/提醒.png"></image>
+    </view>
+  </view>
+  <view class="one" wx:if="{{curIndex==0}}">
+    <block wx:for="{{ order}}">
+      <view class="order-list">
+        <navigator url='/homepages/goods/goods?store_name={{item.store_name}}'>
+          <view class="store-nav">
+            <view class="storeimg">
+              <image src="{{item.logo_url}}"></image>
+            </view>
+            <view class="store-inf">
+              <view class="storename">
+                <text>{{item.store_name}}</text>
+                <image src="cloud://bohuang-r9cm1.626f-bohuang-r9cm1-1301343916/nav.png"></image>
+              </view>
+              <view class="staues">
+                <text wx:if="{{item.status==-1}}">已取消</text>
+                <text wx:elif="{{item.status==0}}">待付款</text>
+                <text wx:else>已完成</text>
+              </view>
+            </view>
+          </view>
+        </navigator>
+        <view class="foodslist">
+        <scroll-view class="foods-group" scroll-x="{{true}}" >
+          <block wx:for="{{item.detail}}" >
+            <view class="foods-box">
+                <image src="{{item.url}}"></image>
+                <text>{{item.foodsname}}</text>
+              </view>
+          </block>
+        </scroll-view>
+         <view class="foods-detail">
+                <view class="detail-top">
+                  <text>￥{{item.total}}</text>
+                </view>
+                <view class="detail-bot">
+                  <text>数量：{{item.detail.length}}</text>
+                </view>
+               </view>
+              </view>
+      </view>
+    </block>
+  </view>
+  <view class="two" wx:elif="{{curIndex==1}}">暂未开发</view>
+  <view class="three" wx:else>也暂未开发</view>
+</view>

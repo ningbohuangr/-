@@ -1,0 +1,33 @@
+<view class="hospitalservice">
+<!-- 导航栏 -->
+<view class="navbar">
+
+</view>
+<!-- 展示框 -->
+<view class="displayimg" >
+<view class="Font-Group">
+<text>MEDICAL SERVICES</text>
+<text>诊疗服务</text>
+</view>
+</view>
+<!-- tab栏 -->
+<van-tabs  color="#f7c6a2" title-active-color="#f6f6f6" swipeable="true" animated="true" active="{{ active }}" bind:change="onChange" >
+  <van-tab title="诊疗项目">
+  <!-- 医疗项目分类 -->
+<view class="hoslist">
+<van-grid column-num="4">
+  <van-grid-item icon="{{item.img}}" text="{{item.label}}" wx:for="{{painlist}}" />
+</van-grid>
+</view>
+  </van-tab>
+  <van-tab title="特色服务">
+  
+  </van-tab>
+  <van-tab title="环境设备">环境设备</van-tab>
+</van-tabs>
+
+<!-- 预约说明 -->
+<view class="orderInfo">
+
+</view>
+</view>

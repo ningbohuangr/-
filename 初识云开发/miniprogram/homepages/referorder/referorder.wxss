@@ -1,0 +1,280 @@
+.user-box{
+  background-color: #ffcd33;
+  height: 400rpx;
+  width: 100%;
+  padding: 20rpx;
+  box-sizing: border-box;
+  border-bottom: solid 8rpx #fade85;
+}
+.navigation{
+  background-color: #fff;
+  height: 50rpx;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.storebring{
+  display: flex;
+  justify-content: center;
+  background: #fff;
+  width: 50%;
+  border-right: solid 6rpx #f6f3e7;
+}
+.storebring.on{
+ background-color: #fff5d5;
+ width: 50%;
+ border-right: solid 6rpx #f6f3e7;
+}
+.storeself{
+  display: flex;
+  justify-content: center;
+ background: #fff;
+  width: 50%; 
+}
+.storeself.on{
+  background-color:#f6f3e7;
+  width: 50%;
+}
+.adress .content{
+  background-color: #fff;
+  height: 160rpx;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: solid 2rpx #e4e4e4;
+  box-sizing: border-box;
+}
+.adress .infromation-group{
+  height: 140rpx;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20rpx;
+}
+.adress .infromation-group text{
+  font-size: 38rpx;
+  color:darkslategray
+}
+ .adress .ifcustom{
+  width: 50%;
+  height: 50%;
+  text-align: justify
+}
+.adress .ifcustom text{
+  color: gray;
+  font-size: 25rpx;
+  margin-right: 4em;
+}
+.gettime .content{
+  background-color: #fff;
+  height: 160rpx;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: solid 2rpx #e4e4e4;
+  box-sizing: border-box;
+}
+.gettime .infromation-group{
+  height: 140rpx;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 20rpx;
+}
+.titel-group{
+  display: flex;
+  justify-content: space-between;
+  color: #e1872a;
+}
+.titel-bot{
+  font-size: 25rpx;
+  color: gray;
+}
+.right{
+  text-align: center;
+  background-color: white;
+  height: 320rpx;
+}
+.foodslist{
+  padding: 0 10rpx;
+}
+.storename{
+  height: 100rpx;
+  padding: 20rpx;
+  display: flex;
+  justify-content: space-between;
+  color: #c1c1c2;
+  background-color:#fff;
+  border-bottom: solid 2rpx #e4e4e4;
+  box-sizing: border-box;
+}
+
+.storename image{
+  width: 50rpx;
+  height: 50rpx;
+}
+.foods-lit-box{
+  display: flex;
+  padding: 10rpx;
+  height: 120rpx;
+  width: 100%;
+  border-bottom: solid 2rpx #e4e4e4;
+  background-color: #fff;
+}
+.image-box{
+  margin-top: 10rpx;
+  flex-basis: 100rpx;
+  
+}
+.image-box image{
+  height: 100rpx;
+  width: 100rpx;
+}
+.foodsdetail{
+  box-sizing: border-box;
+  padding: 10rpx 20rpx;
+  flex: 1; 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.foods-pan{
+  display:flex; 
+  justify-content: space-between;
+}
+.amount{
+  font-size: 32rpx;
+  color: #c1c1c2;
+}
+.remarke{
+  background-color:#fff;
+  height: 100rpx;
+  width: 100%;
+  border-bottom: solid 2rpx #e4e4e4;
+  padding: 20rpx 20rpx;
+  box-sizing: border-box;
+}
+.releft{
+float: left;
+color: #191919;
+}
+.reright{
+  float: right;
+  color: #989e99;
+  font-size: 32rpx;
+}
+.tableware{
+  background-color:#fff;
+  height: 100rpx;
+  width: 100%;
+  border-bottom: solid 2rpx #e4e4e4;
+  padding: 20rpx 20rpx;
+  box-sizing: border-box;
+}
+.tableft{
+float: left;
+color: #191919;
+}
+.tabright{
+  float: right;
+  color: #989e99;
+  font-size: 32rpx;
+}
+.payment{
+  background-color:#fff;
+  height: 100rpx;
+  width: 100%;
+  border-bottom: solid 2rpx #e4e4e4;
+  padding: 20rpx 20rpx;
+  box-sizing: border-box;
+}
+.payleft{
+float: left;
+color: #191919;
+}
+.payright{
+  float: right;
+  font-family: "华文细黑";
+  font-size: 32rpx;
+}
+.paybottom {
+  display: flex;
+  justify-content: space-evenly;
+  height: 130rpx;
+  position: fixed;
+  width: 100%;
+  background-color: gray;
+  bottom: 0;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.icon-group {
+  margin-top: 10rpx;
+  display: flex;
+  justify-content: space-between;
+  width: 40%;
+  height: 100rpx;
+}
+
+
+
+.frist-icon {
+  height: 100rpx;
+  width: 100rpx;
+  padding: 20rpx;
+  display: flex;
+  flex-direction: column;
+  font-size: 24rpx;
+  justify-content: space-between;
+  border-right: solid 6rpx #fff;
+}
+.frist-icon image {
+  margin-left: 25rpx;
+  height: 50rpx;
+  width: 50rpx;
+}
+.mid-icon{
+  display: flex;
+  justify-content: center;
+  width: 100rpx;
+  height: 100rpx;
+  margin: 30rpx 20rpx 30rpx 20rpx;
+}
+.mid-icon image {
+  height: 80rpx;
+  width: 800rpx;
+}
+.pricetext{
+  width: 600rpx;
+  height: 160rpx;
+  display: flex;
+  justify-content: space-between;
+}
+.redprice{
+   display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.redprice text{
+  color: red;
+  font-size: 50rpx;
+  margin-top: 46rpx;
+   height: 160rpx;
+  width: 200rpx;
+}
+.sale{
+  background-color: yellow;
+  height: 160rpx;
+  width: 200rpx;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.sale text{
+  margin-top: 46rpx;
+  font-size: 38rpx;
+  color: black;
+}
+

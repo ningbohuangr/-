@@ -1,0 +1,73 @@
+{
+  "pages": [
+    "pages/ANingPetHospital/index/Index",
+    "pages/ANingPetHospital/serach/Serach",
+    "pages/ANingPetHospital/hospitalservice/Hospitalservice",
+    "pages/index/index",
+    "pages/ANingPetHospital/login/Login",
+    
+    "pages/ANingPetHospital/index/menu/menu",
+    "pages/userConsole/userConsole",
+    "pages/storageConsole/storageConsole",
+    "pages/databaseGuide/databaseGuide",
+    "pages/addFunction/addFunction",
+    "pages/deployFunctions/deployFunctions",
+    "pages/chooseLib/chooseLib",
+    "pages/openapi/openapi",
+    "pages/openapi/serverapi/serverapi",
+    "pages/openapi/callback/callback",
+    "pages/openapi/cloudid/cloudid",
+    "pages/im/im",
+    "pages/im/room/room",
+    "pages/ANingPetHospital/consulting/Consulting",
+    "pages/ANingPetHospital/bbs/Bbs",
+    "pages/ANingPetHospital/serach/hospitaldetail/hospitaldetail"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "云开发 QuickStart",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#fff",
+    "selectedColor": "#eee",
+    "backgroundColor": "#F6F6F6",
+    "borderStyle": "black",
+    "position": "bottom",
+    "list": [
+      {
+        "pagePath": "pages/ANingPetHospital/index/menu/menu",
+        "text": "首页",
+        "iconPath": "images/index.png",
+        "selectedIconPath": "images/首 页 (2).png"
+      },
+      {
+        "pagePath": "pages/ANingPetHospital/hospitalservice/Hospitalservice",
+        "text": "服务",
+        "iconPath": "images/服务.png",
+        "selectedIconPath": "images/服 务 (2).png"
+      },
+      {
+        "pagePath": "pages/ANingPetHospital/serach/Serach",
+        "text": "查询",
+        "iconPath": "images/查询.png",
+        "selectedIconPath": "images/查询 (2).png"
+      },
+      {
+        "pagePath": "pages/ANingPetHospital/bbs/Bbs",
+        "text": "论坛",
+        "iconPath": "images/论坛 .png",
+        "selectedIconPath": "images/论坛 (2).png"
+      },
+      {
+        "pagePath": "pages/ANingPetHospital/consulting/Consulting",
+        "text": "咨询",
+        "iconPath": "images/咨询.png",
+        "selectedIconPath": "images/咨询 (2).png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

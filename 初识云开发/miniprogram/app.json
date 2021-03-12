@@ -1,0 +1,63 @@
+{
+  "pages": [
+   
+    "homepages/homepages",
+    "orderform/orderform",
+    "my/myaddress/myaddress",
+    "my/adressdetail/adressdetail",
+    "homepages/referorder/referorder",
+    "pages/index/index",
+    "pages/userConsole/userConsole",
+    "pages/storageConsole/storageConsole",
+    "pages/databaseGuide/databaseGuide",
+    "pages/addFunction/addFunction",
+    "pages/deployFunctions/deployFunctions",
+    "pages/chooseLib/chooseLib",
+    "pages/openapi/openapi",
+    "pages/openapi/serverapi/serverapi",
+    "pages/openapi/callback/callback",
+    "pages/openapi/cloudid/cloudid",
+    "pages/im/im",
+    "pages/im/room/room",
+    "my/orderlist/orderlist",
+    "my/addadress/addadress",
+    "my/adressalert/adressalert",
+    "homepages/search-page/search-page",
+    "homepages/goods/goods",
+    "homepages/referorder/remarke/remarke",
+    "homepages/referorder/remarke/getadress/getadress",
+    "vip/vip"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "云开发 QuickStart",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [{
+      "pagePath": "homepages/homepages",
+      "text": "主页",
+      "iconPath": "images/home.png",
+      "selectedIconPath": "images/home1.png"
+    },{
+      "pagePath": "vip/vip",
+      "text": "VIP",
+      "iconPath": "images/vip.png",
+      "selectedIconPath": "images/vip1.png"
+    },{
+      "pagePath": "orderform/orderform",
+      "text": "订单",
+      "iconPath": "images/order.png",
+      "selectedIconPath": "images/order1.png"
+    },{
+      "pagePath": "my/myaddress/myaddress",
+      "text": "我的",
+      "iconPath": "images/my.png",
+      "selectedIconPath": "images/my1.png"
+    }]
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
+}
