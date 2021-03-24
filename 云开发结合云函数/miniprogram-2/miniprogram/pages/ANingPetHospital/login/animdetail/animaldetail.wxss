@@ -1,0 +1,68 @@
+/* pages/list2/list2.wxss */
+/* 头部 */
+.header {
+  height: 166rpx;
+  background-color: #a9cb03;
+}
+.containbox{
+  padding: 20rpx;
+}
+/* 卡片
+ */
+.card{
+  margin-top: 20rpx;
+  background-color: white;
+  box-sizing: border-box;
+  height: 380rpx;
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  color:#c8c8c8;
+  border: soild 2rpx #c8c8c8c8;
+  border-radius: 10px;
+}
+i{
+  font-size: large;
+  color: #333333;
+}
+.card .card-left{
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+.card .card-right{
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+.till{
+  height: 100rpx;
+  line-height: 100rpx;
+  background-color:white;
+  margin-top: 20rpx;
+  text-align: center;
+  font-weight: 200;
+  font-size: large;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: #333333;
+  border-radius: 10rpx;
+  
+}
+image{
+  height: 380rpx;
+}
+.topic{
+  background-color: white;
+  margin-bottom: 20rpx;
+}
+button{
+  box-sizing: border-box;
+   background-color: yellow;
+  text-align: center;
+  margin-top: 30rpx;
+  margin-bottom: 30rpx;
+  height: 100rpx;
+  width: 300rpx;
+  border-radius: 20rpx;
+}
+

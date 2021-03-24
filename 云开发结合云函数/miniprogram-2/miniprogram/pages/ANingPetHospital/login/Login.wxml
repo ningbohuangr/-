@@ -1,1 +1,19 @@
-
+<import src="../../../components/list.wxml" />
+<view class="breedofanimal">
+  <view  class="header">
+ 
+  </view>
+  <view class="box" bindtap="srcrlotop">
+<view class="topbox"></view>
+<view class="bottombox"></view>
+  </view>
+  <van-tabs  active="{{ active }}" bind:change="onChange">
+  <van-tab title="猫科"> <scroll-view><template is="list" data="{{imagelist,list}}"></template></scroll-view> </van-tab>
+  <van-tab title="犬类"><scroll-view><template is="list" data="{{imagelist,list}}"></template></scroll-view> </van-tab>
+  <van-tab title="爬行类"><scroll-view><template is="list" data="{{imagelist,list}}"></template></scroll-view> </van-tab>
+  <van-tab title="小宠物类"> <template is="list" data="{{imagelist,list}}"></template><scroll-view></scroll-view></van-tab>
+  <van-tab title="水族类"> <scroll-view><template is="list" data="{{imagelist,list}}"></template></scroll-view></van-tab>
+</van-tabs>
+<view hidden="{{flag}}"><van-loading color="#1989fa"/> <van-loading type="spinner" color="#1989fa" /></view>
+  <view class="footer" hidden="{{foot}}" >~~~到底了~~~</view>
+</view>

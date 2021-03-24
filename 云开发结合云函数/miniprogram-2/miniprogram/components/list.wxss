@@ -1,0 +1,58 @@
+/* 轮播图 */
+.banner{
+  margin: 20rpx 20rpx;
+  height: 320rpx;
+  border-radius: 5%;
+  overflow: hidden;
+}
+.banner image{
+  height: 100%;
+}
+
+/* 地址栏 */
+.dizhi{
+  height: 114rpx;
+  line-height: 114rpx;
+  margin: 0 20rpx;
+}
+
+/* content */
+.content{
+  height: 240rpx;
+  border-bottom: 2rpx solid #c3c3c3;
+  margin: 0 20rpx;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content .img{
+  width: 300rpx;
+  height: 190rpx;
+  overflow: hidden;
+  border-radius: 5%;
+}
+.content .img image{
+  height: 100%;
+  width: 100%;
+}
+.content .rightBox{
+  flex:1;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-end;
+  margin-left: 50rpx;
+}
+.content .rightBox .tage{
+  width: 100%;
+  font-size: 40rpx;
+  display: flex;
+  justify-content: start;
+}
+
+.content .rightBox .time{
+  font-size: 28rpx;
+  color: #c3c3c3;
+}

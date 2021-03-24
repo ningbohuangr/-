@@ -1,0 +1,19 @@
+<template name="list">
+<view>
+  <!-- 列表 -->
+  <view class="content" wx:for="{{list}}" wx:key="{{index}}" data-index="{{index}}" bindtap="to">
+    <view class="img">
+      <image src="{{item.url}}"></image>
+    </view>
+    <view class="rightBox">
+      <view class="tage">{{item.tage}}</view>
+      <view class="time">
+        <span>年龄</span>
+        <span>{{item.day}} </span>
+        <span> {{item.time}}</span>
+      </view>
+    </view>
+  </view>
+</view>
+</template>
+

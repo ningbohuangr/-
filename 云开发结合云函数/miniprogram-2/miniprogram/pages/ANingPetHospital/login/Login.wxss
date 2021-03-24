@@ -1,0 +1,37 @@
+/* 头部 */
+@import "../../../components/list.wxss";
+.header {
+  height: 166rpx;
+  background-color: #a9cb03;
+}
+van-loading{
+  margin:0 auto
+}
+footer{
+height: 50rpx;
+background-color: white;
+text-align: center;
+line-height: 50rpx;
+}
+.box{
+  box-sizing: border-box;
+  position: fixed;
+  justify-content: space-evenly;
+  right: 33rpx;
+  top: 620rpx;
+  z-index: 100;
+}
+.bottombox{
+  border-top: solid 0rpx transparent;
+  border-left: solid 32rpx transparent;
+  border-right: solid 32rpx transparent;
+  border-bottom: solid 80rpx red;
+  z-index: 100;
+}
+.topbox{
+  border-top: solid 0rpx transparent;
+  border-left: solid 32rpx transparent;
+  border-right: solid 32rpx transparent;
+  border-bottom: solid 80rpx red;
+  z-index: 100;
+}

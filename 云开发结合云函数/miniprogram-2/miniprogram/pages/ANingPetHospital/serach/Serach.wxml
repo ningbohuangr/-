@@ -1,55 +1,63 @@
 <view class="serachpages">
-    <!-- 导航栏 -->
-    <view class="navbar"></view>
-    <!-- 展示框 -->
-    <view class="displayimg">
-        <view class="Font-Group">
-            <text>STORE CHECK</text>
-            <text>门店查询</text>
-        </view>
-    </view>
-    <!-- tab栏 -->
-    <van-tabs color="#f7c6a2" title-active-color="#f6f6f6" swipeable="true" animated="true" active="{{ active }}" bind:change="onChange">
-        <van-tab title="门店列表">
-            <view wx:if="{{show}}">
-                <van-area area-list="{{ arealist }}" columns-num="{{ 3 }}" title="选择地址" bind:confirm="getadress" />
-            </view>
-            <view hidden="{{isinfo}}">没有找到数据可以查看以下数据</view>
-        </van-tab>
-        <van-tab title="地图查询">
-            <button bindtap="go">存储</button>
-            <map name=""></map>
-        </van-tab>
-    </van-tabs>
-    <!-- 店铺筛选 -->
-    <view>
-        <block wx:for="{{hopitallist}}">
-            <view class="shoplist">
-                <navigator url="">
-                    <image src="{{item.url}}" />
-                </navigator>
-                <view class="content">
-                    <view class="content-nav">
-                        <text>{{item.name}}</text>
-                    </view>
-                    <view class="content-mid">
-                        <view class="info">
-                            <view>
-                                <van-icon name="phone-o" />
-                                联系电话:{{item.phone}}
-                            </view>
-                            <view>
-                                <van-icon name="location-o" />
-                                门店地址:{{item.province}}{{item.city}}{{item.county}}{{item.detailadress}}
-                            </view>
-                        </view>
-                    </view>
-                </view>
-                <view class="foot">
-                    <van-button round type="info">美团</van-button>
-                    <van-button round type="info" bindtap="godetail">立即查看</van-button>
-                </view>
-            </view>
-        </block>
-    </view>
+	<!-- 导航栏 -->
+	<view class="navbar"></view>
+	<!-- 展示框 -->
+	<view class="displayimg">
+		<view class="Font-Group">
+			<text>STORE CHECK</text>
+			<text>门店查询</text>
+		</view>
+	</view>
+	<!-- tab栏 -->
+	<van-tabs color="#f7c6a2" title-active-color="#f6f6f6" swipeable="true" animated="true" active="{{ active }}" bind:change="onChange">
+		<!-- 门店列表 -->
+		<van-tab title="门店列表">
+			<view wx:if="{{show}}">
+				<van-area area-list="{{ arealist }}" columns-num="{{ 3 }}" title="选择地址" bind:confirm="getadress" />
+			</view>
+			<view hidden="{{isinfo}}">没有找到数据可以查看以下数据</view>
+		</van-tab>
+
+		<!-- 地图查询 -->
+		<van-tab title="地图查询">
+				<input placeholder="请输入地址" bindinput="bdinpunt"></input>
+				<button bindtap="mapgetadress">确定</button>
+			<text>{{}}</text>
+			<view class="mapbox">
+				<map name="" style="width: 100%; height:500rpx;" longitude="{{longitude}}" latitude="{{latitude}}" show-location="true" markers="{{markers}}"></map>
+			</view>
+
+		</van-tab>
+	</van-tabs>
+	<!-- 店铺筛选 -->
+	<view>
+		<block wx:for="{{hopitallist}}">
+			<view class="shoplist">
+				<navigator url="">
+					<image src="{{item.url}}" />
+				</navigator>
+				<view class="content">
+					<view class="content-nav">
+						<text>{{item.name}}</text>
+					</view>
+					<view class="content-mid">
+						<view class="info">
+							<view>
+								<van-icon name="phone-o" />
+								联系电话:{{item.phone}}
+							</view>
+							<view>
+								<van-icon name="location-o" />
+								门店地址:{{item.province}}{{item.city}}{{item.county}}{{item.detailadress}}
+							</view>
+						</view>
+					</view>
+				</view>
+				<view class="foot">
+					<van-button round type="info">美团</van-button>
+					<van-button round type="info" bindtap="godetail">立即查看</van-button>
+				</view>
+			</view>
+		</block>
+	</view>
 </view>

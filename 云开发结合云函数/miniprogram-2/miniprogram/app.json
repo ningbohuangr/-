@@ -1,27 +1,23 @@
 {
   "pages": [
-    "pages/ANingPetHospital/index/Index",
     "pages/ANingPetHospital/serach/Serach",
-    "pages/ANingPetHospital/hospitalservice/Hospitalservice",
-    "pages/index/index",
-    "pages/ANingPetHospital/login/Login",
+    "pages/ANingPetHospital/login/animdetail/animaldetail",
     
+    "maptest/maptest",
+    "pages/ANingPetHospital/serach/hospitaldetail/hospitaldetail",
+    "pages/ANingPetHospital/index/Index",
+    "pages/ANingPetHospital/hospitalservice/Hospitalservice",
+    "pages/ANingPetHospital/login/Login",
     "pages/ANingPetHospital/index/menu/menu",
-    "pages/userConsole/userConsole",
-    "pages/storageConsole/storageConsole",
-    "pages/databaseGuide/databaseGuide",
     "pages/addFunction/addFunction",
-    "pages/deployFunctions/deployFunctions",
-    "pages/chooseLib/chooseLib",
     "pages/openapi/openapi",
     "pages/openapi/serverapi/serverapi",
     "pages/openapi/callback/callback",
     "pages/openapi/cloudid/cloudid",
-    "pages/im/im",
-    "pages/im/room/room",
     "pages/ANingPetHospital/consulting/Consulting",
     "pages/ANingPetHospital/bbs/Bbs",
-    "pages/ANingPetHospital/serach/hospitaldetail/hospitaldetail"
+    "components/list"
+
   ],
   "window": {
     "backgroundColor": "#F6F6F6",

@@ -1,0 +1,41 @@
+<!--pages/list2/list2.wxml-->
+<view>
+	<!-- 头部 -->
+	<view class="header">
+
+	</view>
+
+	<view class="containbox">
+  	<!-- 动物卡片 -->
+		<view class="card">
+
+			<view class="card-left">
+				<text>全名:{{singellist.name}}</text>
+				<text>别名：{{singellist.engName}}</text>
+				<text>性格：{{singellist.characters}}</text>
+				<text>易患：{{singellist.easyOfDisease}}</text>
+			</view>
+			<view class="card-right">
+
+				<view class="card-left">
+					<text>寿命：{{singellist.life}}</text>
+					<text>价格：{{singellist.price}}</text>
+					<text>原产地：{{singellist.nation}}</text>
+				</view>
+			</view>
+		</view>
+		<view class="till">
+			<text >{{singellist.name}}</text>
+		</view>
+    <image src="{{singellist.coverURL}}"></image>
+		<view class="topic">
+			<text>{{singellist.desc}}</text>
+			<text>{{singellist.feature}}</text>
+			<text>{{singellist.characterFeature}}</text>
+			<text>{{singellist.careKnowledge}}</text>
+			<text>{{singellist.feedPoints}}</text>
+		</view>
+      <view>文章来源 :<navigator url="singellist.url">{{singellist.url}}</navigator></view>
+      <button bindtap="buy">购买商品</button>
+	</view>
+</view>
